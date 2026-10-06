@@ -1,0 +1,13 @@
+clarabel==0.11.1
+cvxpy==1.9.3
+gymnasium==1.4.0
+h5py==3.16.0
+matplotlib==3.11.2
+numpy==2.5.3
+pandas==3.0.6
+pyyaml==6.0.3
+scipy==1.18.1
+sionna-no-rt==2.2.0
+stable-baselines3==2.9.0
+tensorboard==2.21.0
+torch==2.11.0+cu128

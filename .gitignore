@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# 排查期实验脚本与旧版 demo（PPO 诊断记录，暂不入库）
+exp_*.py
+run_demo.py
+
+# 图表输出
+results/
