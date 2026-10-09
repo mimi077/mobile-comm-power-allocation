@@ -100,7 +100,7 @@ source ~/venvs/rl-pc/bin/activate        # 必须激活！系统 python 没有�
 
 python channel/sionna_traces.py          # 生成轨迹（~10 秒）
 python -m baselines.selftest             # 验证基线
-python env/power_control_env.py          # env 自检（check_env）
+python env/power_control_env.py          # env 自检（check_env） #未实现
 ```
 
 ## 6. 配置（config.py）

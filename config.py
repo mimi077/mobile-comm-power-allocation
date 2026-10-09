@@ -9,7 +9,7 @@ from dataclasses import dataclass
 C0 = 299_792_458.0  # 光速 [m/s]
 
 
-@dataclass(frozen=True)
+@dataclass(frozen=True) 
 class SceneConfig:
     # ---- 物理参数 ----
     f_c_hz: float = 2.0e9            # 载波频率 [Hz]
