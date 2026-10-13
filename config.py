@@ -32,10 +32,10 @@ class SceneConfig:
     # 注水相对均匀分配增益约 +20%，三组对比有明显区分度。
     bandwidth_hz: float = 10.0e6     # 带宽 [Hz]
     noise_power: float = 1.0e-8      # 等效接收噪声功率 [W]
-    p_max: float = 0.2               # 单时隙最大发射功率 [W]
-    avg_power: float = 0.05          # 平均功率预算 [W] → 总能量 E = avg_power * T * dt
+    p_max: float = 0.2               # 单时隙最大发射功率 [W] 峰值约束
+    avg_power: float = 0.05          # 平均功率约束 [W]
     n_power_levels: int = 5          # 离散功率档位数（含 0 档），对应 5G TPC 式离散功率控制
-    g_history_len: int = 8           # 观测中最近信道增益历史长度（frame stack，模拟 CSI 滤波/预测）
+    g_history_len: int = 8           # 观测包含当前完美CSI + 最近7步历史增益（趋势素材窗口）
 
 
     # ---- 小尺度（Sionna TDL, TR 38.901）----
