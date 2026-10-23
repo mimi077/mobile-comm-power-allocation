@@ -100,7 +100,7 @@ def waterfilling_closed_form(
     p_max: float,
     noise_power: float,
 ) -> np.ndarray:
-    """闭式二分注水（仅用于交叉验证 cvxpy 结果）。
+    """闭式二分注水：主求解器（waterfilling_cvxpy 的结果仅用于交叉验证本函数）。
 
     p_t = min(p_max, max(0, 1/μ - N/g_t))，μ 由 Σ p_t = avg_power·T 确定。
     """

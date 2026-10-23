@@ -28,8 +28,9 @@ class SceneConfig:
     shadow_sigma_db: float = 4.0     # 阴影衰落 std [dB]（每条轨迹内恒定）
 
     # ---- 功率 / 速率 ----
-    # 选 noise=1e-8, avg=0.05, p_max=0.2：中位 SNR≈-2dB（信道受限区），
-    # 注水相对均匀分配增益约 +20%，三组对比有明显区分度。
+    # 选 noise=1e-8, avg=0.05, p_max=0.2：中位 SNR≈0dB（信道受限区），
+    # 注水相对均匀分配增益实测 +9.9% / +11.5% / +21.0%（30/120/350 km/h，
+    # 每速度 100 条测试轨迹），三档速度有明显区分度。
     bandwidth_hz: float = 10.0e6     # 带宽 [Hz]
     noise_power: float = 1.0e-8      # 等效接收噪声功率 [W]
     p_max: float = 0.2               # 单时隙最大发射功率 [W] 峰值约束
